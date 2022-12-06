@@ -10,10 +10,11 @@ function allUnique(v) {
 }
 
 {
+  key_length = 14
   for (k = 0; k < length && !done; k++) {
-    window = substr($0, k , 14)
+    window = substr($0, k , key_length)
     if (allUnique(window) == 1) {
-      print k + 13
+      print k - 1 + key_length
       break
     }
   }
